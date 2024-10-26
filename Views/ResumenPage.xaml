@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ejumbo8B.Views.ResumenPage"
+             Title="ResumenPage">
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <Label x:Name="userLabel" HorizontalOptions="Center" />
+            <Label Text="Resumen" FontSize="20" HorizontalOptions="Center" />
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Nombre:" Grid.Row="0" />
+                <Label x:Name="nameLabel" Grid.Row="0" Grid.Column="1" />
+
+                <Label Text="Apellido:" Grid.Row="1" />
+                <Label x:Name="lastNameLabel" Grid.Row="1" Grid.Column="1" />
+
+                <Label Text="VA:" Grid.Row="2" />
+                <Label x:Name="voltLabel" Grid.Row="2" Grid.Column="1" />
+
+                <Label Text="Fecha:" Grid.Row="3" />
+                <Label x:Name="dateLabel" Grid.Row="3" Grid.Column="1" />
+
+                <Label Text="Ciudad:" Grid.Row="4" />
+                <Label x:Name="cityLabel" Grid.Row="4" Grid.Column="1" />
+
+                <Label Text="Monto Inicial:" Grid.Row="6" />
+                <Label x:Name="initialAmountLabel" Grid.Row="6" Grid.Column="1" />
+
+                <Label Text="Couta Mensual:" Grid.Row="7" />
+                <Label x:Name="monthlyPaymentLabel" Grid.Row="7" Grid.Column="1" />
+
+                <Label Text="Pago Total:" Grid.Row="8" />
+                <Label x:Name="totalPaymentLabel" Grid.Row="8" Grid.Column="1" />
+            </Grid>
+            
+            <Button Text="Cerrar Sesión" Clicked="OnSesionClicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
